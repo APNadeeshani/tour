@@ -17,9 +17,9 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/customer','customer@customers');
-Route::get('/cusnew','customer@neww');
-Route::post('/savecus','customer@savecust');
+Route::get('/customer','customer@customers'); //load customer home
+Route::get('/cusnew','customer@neww'); //load customer new
+Route::post('/savecus','customer@savecust'); //save customer
 Route::get('/drivernew','drivers@drivnew');
 Route::get('/vahiclenew','vehiclecon@vehiclenew');
 Route::get('/placenew','placecon@placeconnew');
